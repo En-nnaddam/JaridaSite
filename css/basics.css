@@ -1,0 +1,75 @@
+:root {
+  /* palette 1 */
+  --main-color-1: #fb8b24;
+  --main-color-2: #e36414;
+  --main-color-3: #610f42;
+  --main-color-4: #9a031e;
+  --main-color-5: #0f4c5c;
+
+  /* palette 2 white to black serie */
+  --wtb-color-l1: #f8f9fa;
+  --wtb-color-l2: #e9ecef;
+  --wtb-color-l3: #dee2e6;
+  --wtb-color-l4: #ced4da;
+  --wtb-color-l5: #adb5bd;
+  --wtb-color-l6: #6c757d;
+  --wtb-color-l7: #495057;
+  --wtb-color-l8: #343a40;
+  --wtb-color-l9: #212529;
+
+  /* palette 3 */
+  --green-light-color: #606c38;
+  --green-dark-color: #283618;
+  --light-color: #fefae0;
+  --orange-light-color: #dda15e;
+  --orange-dark-color: #bc6c25;
+}
+
+ /* @media (prefers-color-scheme: dark)
+{
+  :root {
+    --green-light-color: #dda15e;
+    --green-dark-color: #bc6c25;
+    --orange-light-color: #606c38;
+    --orange-dark-color: #283618;
+  }
+}  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.gap {
+  gap: 1em;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
