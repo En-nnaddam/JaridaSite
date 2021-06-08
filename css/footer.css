@@ -2,8 +2,11 @@
 {
     --dark-color-prefer : rgb(59, 59, 59);
     --light-color-prefer : rgb(141, 141, 141);
+    --link-color : var(--light-color-prefer);
+
     /* --dark-color-prefer : var(--orange-dark-color);
-    --light-color-prefer : var(--orange-light-color); */
+    --light-color-prefer : var(--orange-light-color);
+    --link-color : var(--wtb-color-l1); */
 }
 
 .footer-site
@@ -23,12 +26,13 @@
 .footer-site a
 {
     text-decoration: none;
-    color: var(--light-color-prefer);
+    color: var(--link-color);
     display: block;
     width: 100%;
     /* color : var(--wtb-color-l1); */
 }
 
+/* ===== header of footer ===== */
 .footer-site header
 {
     position: absolute;
@@ -77,6 +81,13 @@
     transform: rotateX(180deg);
 }
 
+@media (max-width : 50em) {
+    .footer-site header {
+        left: 0;
+    }
+}
+/* ===== End of header of footer ===== */
+
 .footer-nav
 {
     justify-content: space-around;
@@ -116,10 +127,6 @@
 {
     margin-top: 2em;
     text-align: center;
-}
-
-.accordion.active {
-    background-color: var(--orange-dark-color);
 }
 
 @media (max-width : 50em) {

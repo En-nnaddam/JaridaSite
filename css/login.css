@@ -14,6 +14,7 @@ body
 }
 
 .login-container main {
+  position: relative;
   width: 100vw;
   color: var(--wtb-color-l1);
   min-height: 60vh;
@@ -28,7 +29,60 @@ body
   background: linear-gradient(120deg, var(--green-dark-color) 0%, var(--green-light-color) 100%);
 }
 
-.login-container main h1 {
+.login-container main > * {
+  z-index: 2;
+}
+
+/* ===== Logo ===== */
+.logo {
+  padding-inline: 2em;
+  opacity: 0.5;
+  cursor: pointer;
+  filter: invert(53%) sepia(17%) saturate(840%) hue-rotate(175deg) brightness(116%) contrast(100%);
+}
+
+.logo:hover {
+  transition: 2s;
+  filter: invert(50%) sepia(22%) saturate(6997%) hue-rotate(344deg)
+    brightness(102%) contrast(97%);
+    transform: translateX(-2em);
+    opacity: 1;
+}
+
+.logo img {
+  width: 2.5rem;
+  margin-right: 0.2em;
+}
+
+.logo figcaption {
+  font-size: 1.5em;
+  color: white;
+}
+
+.logo span {
+  color: var(--main-color-1);
+  transition: 1s;
+}
+
+.arida
+{
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-100px);
+}
+
+.arida.active {
+  position: absolute;
+  display: block;
+  opacity: 1;
+  background-color: transparent;
+  transform: translateX(0);
+}
+
+/* ===== End Logo ===== */
+
+.login-container main figure {
   font-weight: 100;
   font-size: 2.3em;
   text-align: center;
@@ -47,8 +101,6 @@ body
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-
-          z-index: 2;
 }
 
 .login-container input {
@@ -135,14 +187,15 @@ body
   cursor: pointer;
 }
 
-.login-container .sign {
-  z-index: 2;
-}
-
 .login-container .sign a
 {
   color: var(--orange-light-color);
   cursor: pointer;
+}
+
+.login-container .sign a:hover 
+{
+  text-decoration: underline;
 }
 
 /* .login-container .sign

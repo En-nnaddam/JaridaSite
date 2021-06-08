@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/basics.css" />
-    <link rel="stylesheet" href="./css/loader.css" />
+    <!-- <link rel="stylesheet" href="./css/loader.css" /> -->
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/slideShow.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -18,22 +18,44 @@
     <title>Jarida</title>
   </head>
   <body>
-
+    
     <header class="header-site gap" id="header">
+      <i onclick="toggleMenu()" class="fas fa-bars"></i>
+
       <figure class="logo">
         <div class="flex-center">
-          <img src="img/jarida-light.png" alt="Logo Jarida" />
+          <img src="img/jarida-light.png" alt="Logo Jarida" onmouseover="logoHover()" onmouseout="logoOut()"/>
+            
           <figcaption>
-            <span>arida</span><br />
+            <span class="arida">arida</span><br />
             <pre>International Scientific Journal</pre>
           </figcaption>
         </div>
       </figure>
+
         <div class="flex gap register">
-          <a href="register.html">Subscribe</a>
+          <a href="subscribe.html">Subscribe</a>
           <a href="login.html">Login</a>
         </div>
+
+        <i class="far fa-bell"></i>
+        <!-- <i class="fas fa-bell"></i> -->
     </header>
+
+    <!-- Menu for mobile version -->
+    
+      <nav class="navmobile">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="journals.html">Journals</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="archive.html">Archive</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+
+    <!-- End Menu for mobile version --> 
 
     <nav class="navsite flex">
       <ul class="flex">
@@ -52,7 +74,7 @@
                   id="mobile"
                   class="radio"
                 />
-                <label for="mobile">Computer</label>
+                <label for="mobile">Physical Sciences and Engineering</label>
               </div>
               <div class="option">
                 <input
@@ -62,7 +84,7 @@
                   id="cuisine"
                   class="radio"
                 />
-                <label for="cuisine">Earth</label>
+                <label for="cuisine">Life Sciences</label>
               </div>
               <div class="option">
                 <input
@@ -72,7 +94,7 @@
                   id="console"
                   class="radio"
                 />
-                <label for="console">Education</label>
+                <label for="console">Health Sciences</label>
               </div>
               <div class="option">
                 <input
@@ -82,7 +104,7 @@
                   id="electro"
                   class="radio"
                 />
-                <label for="electro">Food & Thecnology</label>
+                <label for="electro">Social Sciences and Humanities</label>
               </div>
               <div class="option">
                 <input
@@ -92,10 +114,10 @@
                   id="Accessoires"
                   class="radio"
                 />
-                <label for="Accessoires">Chemistry</label>
+                <label for="Accessoires">Social Sciences</label>
               </div>
 
-              <div class="option">
+              <!-- <div class="option">
                 <input
                   type="radio"
                   name="produit"
@@ -126,7 +148,8 @@
                   class="radio"
                 />
                 <label for="Accessoires">Paediatrics</label>
-              </div>
+              </div> -->
+
             </div>
             <div class="selected">Category</div>
           </div>
@@ -149,9 +172,9 @@
       
     </main>
     <!--* Barre de recherche -->
-    <main id="main-vid">
+    <main id="main-vid" class="flex">
         <p>
-          Get Real time notifications of science, space and technology ! Stay Tuned 
+          Get Real time notifications of science, space and technology&nbsp;! Stay Tuned 
         </p>
         <form action="./search.php" method="POST" class="flex-center gap">
           <div class="flex-center bar-search gap">
@@ -272,9 +295,12 @@
 
     </footer>
 
+    <script src="./js/menu.js"></script>
     <script src="./js/sideshow.js"></script>
+    <!-- <script src="./js/header.js"></script> -->
       <script src="./js/accordion.js"></script>
     <script src="./js/drop_down_category.js"></script>
+    <!-- <script src="./js/loader.js"></script> -->
 
   </body>
 </html>
