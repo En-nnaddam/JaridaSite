@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
 
-body {
-  overflow: hidden;
-}
-
 .login-container {
   font-family: "Source Sans Pro", sans-serif;
   height: 100vh;
@@ -13,12 +9,15 @@ body {
 }
 
 .login-container main {
-  width: 100vw;
   color: var(--wtb-color-l1);
+
   min-height: 60vh;
+  width: 100vw;
+
 
   margin-block: auto;
   padding-block: 3em;
+  
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -210,6 +209,10 @@ body {
 
   .login-container input {
     height: 1.5em;
+  }
+
+  .login-container input:focus {
+    width: 120%;
   }
 
 }
