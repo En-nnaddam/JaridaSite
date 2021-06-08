@@ -126,12 +126,15 @@
   .navmobile {
     display: none;
     width: 100vw;
+    max-height: 0;
   }
 
   @media (max-width: 50em) {
     .navmobile {
+      max-height: max-content;
       padding-inline: 1em;
       text-align: center;
+      display: none;
       background-color: var(--green-dark-color);
     }
 
