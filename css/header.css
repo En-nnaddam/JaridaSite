@@ -139,7 +139,8 @@
     }
 
     .navmobile a {  
-      color: var(--green-light-color);
+    color: var(--wtb-color-l1);
+    font-weight: bold;
     }
 
     .navmobile li {
@@ -150,7 +151,8 @@
       list-style: none;
     }
     .navmobile li:hover a{
-      color: var(--wtb-color-l1);
+      /* color: #f39d3c; */
+      color: #ffc686;
     }
   }
 
