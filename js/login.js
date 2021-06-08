@@ -1,8 +1,8 @@
 const login = document.getElementById("login");
 const register = document.getElementById("register");
 
-login.style.display = "none";
-// register.style.display = "none";
+// login.style.display = "none";
+register.style.display = "none";
 
 function switchTo(block) {
   if (block === "login") {
