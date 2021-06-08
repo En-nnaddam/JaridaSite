@@ -132,7 +132,6 @@
     .navmobile {
       padding-inline: 1em;
       text-align: center;
-      display: block;
       background-color: var(--green-dark-color);
     }
 
