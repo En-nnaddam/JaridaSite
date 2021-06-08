@@ -200,6 +200,10 @@ body {
 
 @media (max-width: 50em) {
 
+  .login-container main {
+    padding-block: 1em;
+  }
+
   .login-container form {
     gap: 0.6em;
   }
