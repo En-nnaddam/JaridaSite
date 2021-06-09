@@ -7,7 +7,7 @@
   bottom: 0;
   height: 100vh;
   width: 100vw;
-  background-color: var(--wtb-color-l1);
+  background-color: var(--bg-light);
 }
 
 .loader-container {

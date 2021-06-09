@@ -43,12 +43,12 @@
     background-color: var(--dark-color-prefer);
 
     font-weight: 400;
-    text-shadow: 0 0.1em 0.5em var(--wtb-color-l9);
+    text-shadow: 0 0.1em 0.5em var(--color-dark);
 }
 
 .footer-site header a
 {
-    color: var(--wtb-color-l1);
+    color: var(--color-light);
 }
 
 .footer-site header:hover
@@ -59,7 +59,7 @@
 
 .footer-site header:hover a
 {
-    color: var(--wtb-color-l1);
+    color: var(--color-light);
 }
 
 .footer-site header::before
@@ -96,8 +96,8 @@
 
 .footer-nav h2
 {
-    color: var(--wtb-color-l1);
-    text-shadow: 0 0.1em 0.2em var(--wtb-color-l9);
+    color: var(--color-light);
+    text-shadow: 0 0.1em 0.2em var(--color-dark);
     /* border-block: 0.1em solid; */
 }
 
@@ -114,7 +114,7 @@
 
 .footer-nav li:hover a
 {
-    color: var(--wtb-color-l1);
+    color: var(--color-light);
 }
 
 .footer-nav li.address:hover 
@@ -130,9 +130,14 @@
 }
 
 @media (max-width : 50em) {
+    .footer-nav a{
+        font-size: 0.9em;
+    }
+
     .footer-nav h2
     {
         border-block: 0.1em solid;
+        font-size: 1em;
     }
 
     .footer-site main {

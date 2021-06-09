@@ -34,12 +34,12 @@
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: var(--green-dark-color);
+    background-color: var(--bg-primary-dark);
   }
   
   /* Caption text */
   .text {
-    color: var(--wtb-color-l1);
+    color: var(--color-light);
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -50,7 +50,7 @@
   
   /* Number text (1/3 etc) */
   .numbertext {
-    color: var(--wtb-color-l1);
+    color: var(--color-light);
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -63,14 +63,14 @@
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: var(--green-light-color);
+    background-color: var(--bg-primary-dark);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
   
   .active, .dot:hover {
-    background-color: var(--orange-dark-color);
+    background-color: var(--color-secondry-dark);
   }
   
   /* Fading animation */

@@ -1,6 +1,6 @@
 /* ===== header du site ===== */
 .header-site {
-  background-color: var(--green-dark-color);
+  background-color: var(--bg-primary-dark);
   padding: 1em 2em;
   width: 100vw;
 }
@@ -9,7 +9,7 @@
 {
   font-size: x-large;
   display: none;
-  color: white;
+  color: var(--color-light);
   cursor: pointer;
 }
 
@@ -19,9 +19,9 @@
 
 .header-site a {
   background-color: transparent;
-  border: 0.1em solid var(--wtb-color-l1);
+  border: 0.1em solid var(--color-light);
   border-radius: 0.2em;
-  color: white;
+  color: var(--color-light);
 
   height: max-content;
   padding: 1em 2em;
@@ -30,7 +30,7 @@
 }
 
 .header-site a:hover {
-  background-color: var(--green-light-color);
+  background-color: var(--bg-primary-light);
 }
 
 /* ===== Logo ===== */
@@ -56,35 +56,15 @@
 }
 
 .logo span {
-  color: var(--main-color-1);
+  color: rgb(248, 150, 58);
   transition: 1s;
 }
 
-/* 
-.arida {
-  opacity: 0;
-  position: absolute;
-  transform: translateX(-77px);
-} */
-
-/* .arida.active {
-  position: absolute;
-  display: block;
-  opacity: 1;
-  background-color: transparent;
-  transform: translateX(0);
-} */
-
 .logo pre {
-  color: var(--wtb-color-l1);
+  color: var(--color-light);
 }
 
 @media (max-width: 50em) {
-  /* .logo {
-    display: flex;
-    justify-content: flex-end;
-  } */
-
   .header-site
   {
     display: flex;
@@ -135,11 +115,11 @@
       padding-inline: 1em;
       text-align: center;
       display: none;
-      background-color: var(--green-dark-color);
+      background-color: var(--bg-primary-dark);
     }
 
     .navmobile a {  
-    color: var(--wtb-color-l1);
+    color: var(--color-light);
     font-weight: bold;
     }
 
@@ -162,7 +142,7 @@
 .navsite {
   padding: 1em 0em;
   width: 100vw;
-  background-color: var(--green-light-color);
+  background-color: var(--bg-primary-light);
   position: sticky;
   top: 0;
   z-index: 2;
@@ -193,30 +173,13 @@
 }
 
 .navsite a {
-  color: var(--wtb-color-l1);
+  color: var(--color-light);
   text-decoration: none;
-}
-
-.navsite input[type="submit"] {
-  background-color: white;
-  border: none;
-  color: var(--wtb-color-l6);
-  padding: 1em;
-  border-radius: 0.8em;
-  cursor: pointer;
-}
-
-.navsite input[type="submit"]:hover {
-  color: var(--wtb-color-l1);
-  background: rgb(97, 15, 66);
 }
 
 @media (max-width: 65em) {
   .navsite li {
     padding-inline: 0.8em;
-  }
-  .navsite form {
-    margin-inline: 0.8em;
   }
 }
 
@@ -243,7 +206,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--green-dark-color);
+  background-color: var(--bg-primary-dark);
   width: 100vw;
   height: 99.5%;
   mix-blend-mode: multiply;
@@ -259,7 +222,7 @@
   flex-direction: column;
 }
 #main-vid p {
-  color: var(--wtb-color-l1);
+  color: var(--color-light);
   font-size: 3em;
   width: 60%;
 
@@ -285,7 +248,7 @@
 }
 
 .bar-search i {
-  color: var(--wtb-color-l9);
+  color: var(--color-dark);
 }
 
 .bar-search input[type="search"] {
@@ -299,16 +262,16 @@
 }
 
 #search {
-  background-color: var(--wtb-color-l1);
+  background-color: var(--bg-light);
   padding: 0.9em;
   width: 6em;
   border: none;
-  color: var(--wtb-color-l9);
+  color: var(--color-dark);
   cursor: pointer;
 }
 
 #search:hover {
-  background-color: var(--orange-light-color);
+  background-color: var(--color-secondry-light);
   /* color: var(--wtb-color-l9); */
 }
 
@@ -345,8 +308,8 @@
 }
 
 .select-box .options-container {
-  background-color: var(--green-light-color);
-  color: var(--wtb-color-l1);
+  background-color: var(--bg-primary-light);
+  color: var(--color-light);
   max-height: 0;
   width: 100%;
   opacity: 0;
@@ -364,8 +327,8 @@
 }
 
 .selected {
-  background-color: var(--wtb-color-l1);
-  color: var(--wtb-color-l6);
+  background-color: var(--bg-light);
+  color: var(--color-dark);
   border-radius: 0.8rem;
   position: relative;
   order: 0;
@@ -419,12 +382,12 @@
 
 .select-box .options-container::-webkit-scrollbar {
   width: 0.8rem;
-  background-color: var(--wtb-color-l1);
+  background-color: var(--bg-light);
   border-radius: 0 0.8rem 0.8rem 0;
 }
 
 .select-box .options-container::-webkit-scrollbar-thumb {
-  background-color: var(--green-dark-color);
+  background-color: var(--bg-primary-dark);
   border-radius: 0 0.8rem 0.8rem 0;
 }
 
@@ -435,7 +398,7 @@
 }
 
 .select-box .option:hover {
-  background-color: var(--green-dark-color);
+  background-color: var(--bg-primary-dark);
 }
 
 .select-box label {
